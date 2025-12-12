@@ -146,7 +146,7 @@ async function handleCheckoutSessionCompleted(session) {
       amount: session.amount_total,
       currency: session.currency,
       status: 'succeeded',
-      paymentType: plan === 'lifetime' ? 'one-time' : 'subscription',
+      paymentType: plan === 'lifetime' ? 'one_time' : 'subscription',
       subscriptionPlan: plan,
       purchaseDate: new Date(),
       metadata: {
